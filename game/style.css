@@ -1,0 +1,38 @@
+body {  
+    margin: 0;  
+    font-family: Arial, sans-serif;  
+    background: #d3d3d3;  
+}  
+
+#game-container {  
+    position: relative;  
+    width: 400px;  
+    height: 600px;  
+    background: #fff;  
+    overflow: hidden;  
+    margin: 0 auto;  
+    border: 2px solid #000;  
+}  
+
+#car {  
+    position: absolute;  
+    width: 50px;  
+    height: 100px;  
+    background: red;  
+    bottom: 10px;  
+    left: 175px; /* Center the car */  
+}  
+
+.obstacle {  
+    position: absolute;  
+    width: 50px;  
+    height: 100px;  
+    background: black;  
+    animation: move 3s linear forwards;  
+}  
+
+@keyframes move {  
+    to {  
+        transform: translateY(600px);  
+    }  
+}  
